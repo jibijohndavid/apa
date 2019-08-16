@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `APA Stones`,
+    description: `APA Stones are known for its strength, natural shine and quality of stone. These tiles can be used for multipurpose applications like flooring, wall cladding decoration of interior and exterior.`,
+    author: `@jibijohndavid`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
