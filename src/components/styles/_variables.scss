@@ -2,3 +2,13 @@ $primary-color: #e14658;
 $secondary-color: #3f3250;
 $primary-dark: #22252c;
 $secondary-light: #ececec;
+
+$screen-sm: 576px;
+$screen-md: 768px;
+$screen-lg: 992px;
+$screen-xl: 1200px;
+
+$screen-size: "sm" 576px, "md" 768px, "lg" 992px, "xl" 1200px;
+
+$container-size: 576px 540px "sm", 768px 720px "md", 992px 960px "lg",
+  1200px 1140px "xl";
