@@ -1,9 +1,20 @@
 @import "_variables";
 @import "_utility";
 
-// .container {
-//   padding: 0 4em;
-// }
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+
+  @each $media-size, $container-size in $container-size {
+    @media (min-width: $media-size) {
+      max-width: $container-size;
+    }
+  }
+}
+
 .hero {
   &-wrapper {
     height: 80vh;
@@ -12,7 +23,7 @@
     background-size: cover;
     display: flex;
     align-items: flex-end;
-    padding: 10em 4em;
+    padding: 10em 0;
   }
 
   &__title {
@@ -27,8 +38,42 @@
 
 .about {
   &-wrapper {
-    margin: 3em 0;
+    margin: 6em 0;
     display: flex;
+    justify-content: space-between;
+  }
+
+  &-infographics {
+    min-width: 350px;
+    margin-right: 40px;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  &-info {
+    &__title {
+      font-size: 46px;
+
+      &-welcome {
+        font-size: 20px;
+        font-weight: 400;
+      }
+
+      &-sec {
+        font-size: 26px;
+        font-weight: 500;
+      }
+    }
+    &__btn {
+      padding: 20px 30px;
+      margin-top: 20px;
+      border: 3px solid $primary-dark;
+      background-color: transparent;
+      outline: none;
+      font-weight: 700;
+    }
   }
 }
 

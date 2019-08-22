@@ -1,13 +1,16 @@
 import React from "react"
 import styled from "styled-components"
 
-const NavWrapper = styled.nav`
+const NavWrapper = styled.div`
   position: fixed;
   width: 100%;
-  display: flex;
-  justify-content: space-between;
-  padding: 15px 25px;
+  padding: 15px 0;
   background-color: rgba(0, 0, 0, 0.5);
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+  }
 `
 
 const NavLinkWrapper = styled.ul`
@@ -22,28 +25,30 @@ const NavLink = styled.a`
 `
 
 const HeaderNav = () => (
-  <div className="container">
-    <NavWrapper>
-      <NavBranding>APA</NavBranding>
-      <NavLinkWrapper>
-        <li>
-          <NavLink>About Us</NavLink>
-        </li>
-        <li>
-          <NavLink>Categories</NavLink>
-        </li>
-        <li>
-          <NavLink>Products</NavLink>
-        </li>
-        <li>
-          <NavLink>Brands</NavLink>
-        </li>
-        <li>
-          <NavLink>Contact</NavLink>
-        </li>
-      </NavLinkWrapper>
-    </NavWrapper>
-  </div>
+  <NavWrapper>
+    <div className="container">
+      <nav>
+        <NavBranding>APA</NavBranding>
+        <NavLinkWrapper>
+          <li>
+            <NavLink>About Us</NavLink>
+          </li>
+          <li>
+            <NavLink>Categories</NavLink>
+          </li>
+          <li>
+            <NavLink>Products</NavLink>
+          </li>
+          <li>
+            <NavLink>Brands</NavLink>
+          </li>
+          <li>
+            <NavLink>Contact</NavLink>
+          </li>
+        </NavLinkWrapper>
+      </nav>
+    </div>
+  </NavWrapper>
 )
 
 export default HeaderNav
