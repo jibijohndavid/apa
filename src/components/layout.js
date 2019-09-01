@@ -13,7 +13,7 @@ import HeaderNav from "./common/nav"
 import Footer from "./common/footer"
 import Copyright from "./common/copyright"
 import "./reboot.css"
-import "./styles/main.scss"
+import "./styles/base.scss"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`

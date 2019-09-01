@@ -4,8 +4,9 @@ import styled from "styled-components"
 const NavWrapper = styled.div`
   position: fixed;
   width: 100%;
-  padding: 15px 0;
-  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px 0;
+  background-color: rgba(0, 0, 0, 0.65);
+  z-index: 9;
 
   nav {
     display: flex;
@@ -14,36 +15,75 @@ const NavWrapper = styled.div`
 `
 
 const NavLinkWrapper = styled.ul`
+  display: flex;
+  align-items: center;
+  padding: 0;
+  list-style: none;
   > li {
-    display: inline-block;
+    margin-left: 25px;
+
+    a {
+      color: white !important;
+      text-decoration: none;
+      position: relative;
+      padding-bottom: 5px;
+      transition: color 0.3s;
+      &:after {
+        position: absolute;
+        transition: 0.3s;
+        content: "";
+        width: 0;
+        left: 50%;
+        bottom: 0;
+        height: 3px;
+        background: #f7f7f7;
+      }
+
+      &:hover {
+        opacity: 1 !important;
+        &:after {
+          width: 100%;
+          left: 0;
+        }
+      }
+    }
+
+    &:not(.active) {
+      a {
+        opacity: 0.7;
+      }
+    }
   }
 `
-const NavBranding = styled.span``
-
-const NavLink = styled.a`
-  color: white;
+const NavBranding = styled.span`
+  color: #e14658;
+  font-size: 30px;
+  font-weight: 500;
 `
 
 const HeaderNav = () => (
   <NavWrapper>
     <div className="container">
       <nav>
-        <NavBranding>APA</NavBranding>
-        <NavLinkWrapper>
-          <li>
-            <NavLink>About Us</NavLink>
+        <NavBranding>Apastones.</NavBranding>
+        <NavLinkWrapper className="m-0">
+          <li className="active">
+            <a href="#">Home</a>
           </li>
           <li>
-            <NavLink>Categories</NavLink>
+            <a href="#">What We Do</a>
           </li>
           <li>
-            <NavLink>Products</NavLink>
+            <a href="#">Categories</a>
           </li>
           <li>
-            <NavLink>Brands</NavLink>
+            <a href="#">Products</a>
           </li>
           <li>
-            <NavLink>Contact</NavLink>
+            <a href="#">Brands</a>
+          </li>
+          <li>
+            <a href="#">Contact Us</a>
           </li>
         </NavLinkWrapper>
       </nav>

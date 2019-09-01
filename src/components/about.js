@@ -5,9 +5,16 @@ const About = () => (
     <section className="about-wrapper">
       <div className="about-infographics">
         <img
-          src="https://images.unsplash.com/photo-1481151500463-1fa2dd2d5dbe?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1506&q=80"
+          src="https://dummyimage.com/300x800/3f3250/fff.png"
           alt=""
+          className="about-infographics__img1"
         />
+        <img
+          src="https://dummyimage.com/600x500/22252c/fff.png"
+          alt=""
+          className="about-infographics__img2"
+        />
+        <span className="about-infographics__quality">Quality Assured</span>
       </div>
       <div className="about-info">
         <h4 className="about-info__title-welcome text-primary text-uppercase">

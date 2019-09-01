@@ -1,0 +1,22 @@
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+
+  @each $media-size, $container-size in $container-size {
+    @media (min-width: $media-size) {
+      max-width: $container-size;
+    }
+  }
+}
+
+h5 {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+h2 {
+  font-size: 36px;
+}

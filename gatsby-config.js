@@ -4,6 +4,7 @@ module.exports = {
     description: `APA Stones are known for its strength, natural shine and quality of stone. These tiles can be used for multipurpose applications like flooring, wall cladding decoration of interior and exterior.`,
     author: `@jibijohndavid`,
   },
+  pathPrefix: `/apa`,
   plugins: [
     `gatsby-plugin-react-helmet`,
     {
