@@ -1,19 +1,16 @@
 import React, { Component } from "react"
 
-const category = () => (
+const Category = props => (
   <div className="category-item">
-    <img src="https://dummyimage.com/600x500/3f3250/fff.png" alt="" />
+    <img src={props.img} alt="" />
     <div className="category-item__info">
-      <h4 className="category-item__title">Marbles</h4>
-      <p>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil,
-        magnamet, amet vel option.
-      </p>
+      <h4 className="category-item__title">{props.title}</h4>
+      <p className="category-item__desc">{props.desc}</p>
       <a href="#" className="category-item__action text-uppercase">
-        Browse Marbles
+        Browse {props.title}
       </a>
     </div>
   </div>
 )
 
-export default category
+export default Category

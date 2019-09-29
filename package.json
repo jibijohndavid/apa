@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "apa-stones",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
-  "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "description": "APA Stones are known for its strength, natural shine and quality of stone. These tiles can be used for multipurpose applications like flooring, wall cladding decoration of interior and exterior.",
+  "version": "0.2.0",
+  "author": "Jibi John David <jibijohndavid@gmail.com>",
   "dependencies": {
     "gatsby": "^2.13.65",
     "gatsby-image": "^2.2.8",
@@ -20,6 +20,7 @@
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
     "react-helmet": "^5.2.1",
+    "react-slick": "^0.25.2",
     "styled-components": "^4.3.2"
   },
   "devDependencies": {
