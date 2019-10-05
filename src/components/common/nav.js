@@ -1,4 +1,7 @@
 import React from "react"
+import { Link } from "gatsby"
+import { withPrefix } from "gatsby"
+
 const HeaderNav = () => (
   <div className="nav-wrapper">
     <div className="container">
@@ -6,22 +9,22 @@ const HeaderNav = () => (
         <span className="nav__branding">Apastones.</span>
         <ul className="nav__links m-0">
           <li className="active">
-            <a href="#">Home</a>
+            <Link to="/">Home</Link>
           </li>
           <li>
-            <a href="#">What We Do</a>
+            <Link to="/#aboutSection">What We Do</Link>
           </li>
           <li>
-            <a href="#">Categories</a>
+            <Link to="/">Categories</Link>
           </li>
           <li>
-            <a href="#">Products</a>
+            <Link to="/products">Products</Link>
           </li>
           <li>
-            <a href="#">Brands</a>
+            <Link to="/">Brands</Link>
           </li>
           <li>
-            <a href="#">Contact Us</a>
+            <Link to="/">Contact Us</Link>
           </li>
         </ul>
       </nav>

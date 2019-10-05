@@ -1,6 +1,6 @@
 import React, { Component } from "react"
 const About = () => (
-  <div className="container">
+  <div className="container" id="aboutSection">
     <section className="about-wrapper">
       <div className="about-infographics">
         <img

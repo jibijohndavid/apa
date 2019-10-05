@@ -1,22 +1,25 @@
 {
   "folders": [
-	{
-		"path": "C:\\Users\\Jibi\\Desktop\\To-Do"
-	},
-	{
-		"path": "C:\\Users\\Jibi\\Desktop\\ToDo-UI"
-	},
-	{
-		"path": "C:\\Users\\Jibi\\Desktop\\apa\\apa"
-	},
-	{
-		"path": "C:\\Users\\Jibi\\Desktop\\j-do"
-	},
-	{
-		"path": "C:\\Users\\Jibi\\Desktop\\npm-first-package"
-	}
-],
+    {
+      "path": "C:\\Users\\Jibi\\Desktop\\To-Do"
+    },
+    {
+      "path": "C:\\Users\\Jibi\\Desktop\\ToDo-UI"
+    },
+    {
+      "path": "C:\\Users\\Jibi\\Desktop\\apa\\apa"
+    },
+    {
+      "path": "C:\\Users\\Jibi\\Desktop\\j-do"
+    },
+    {
+      "path": "C:\\Users\\Jibi\\Desktop\\npm-first-package"
+    },
+    {
+      "path": "C:\\Users\\Jibi\\Desktop\\Darlite Solutions"
+    }
+  ],
   "settings": {
-    "liveServer.settings.multiRootWorkspaceName": "ToDo-UI"
+    "liveServer.settings.multiRootWorkspaceName": "Darlite Solutions"
   }
 }
