@@ -1,8 +1,8 @@
 import React from "react"
 
-const BrandItem = () => (
+const BrandItem = props => (
   <li className="brand-item">
-    <img src="https://dummyimage.com/300x150/f7f7f7/3f3250.png" alt="" />
+    <img src={props.img} alt="" />
   </li>
 )
 
