@@ -22,7 +22,7 @@ var settings = {
 }
 
 const Categories = () => (
-  <section className="categories-wrapper">
+  <section className="categories-wrapper" id="categorySection">
     <h5 className="text-primary text-uppercase">Our Categories</h5>
     <h2 className="text-light">Industires Served</h2>
 

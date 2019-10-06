@@ -15,13 +15,13 @@ const HeaderNav = () => (
             <Link to="/#aboutSection">What We Do</Link>
           </li>
           <li>
-            <Link to="/">Categories</Link>
+            <Link to="/#categorySection">Categories</Link>
           </li>
           <li>
             <Link to="/products">Products</Link>
           </li>
           <li>
-            <Link to="/">Brands</Link>
+            <Link to="/#brandSection">Brands</Link>
           </li>
           <li>
             <Link to="/">Contact Us</Link>
