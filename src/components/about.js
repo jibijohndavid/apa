@@ -4,12 +4,12 @@ const About = () => (
     <section className="about-wrapper">
       <div className="about-infographics">
         <img
-          src="https://images.unsplash.com/photo-1560440021-33f9b867899d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1809&q=80"
+          src="./images/about1.jpg"
           alt=""
           className="about-infographics__img1"
         />
         <img
-          src="https://live.staticflickr.com/4508/37692516256_eee22ef6f8_b.jpg"
+          src="./images/about2.jpg"
           alt=""
           className="about-infographics__img2"
         />
