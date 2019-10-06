@@ -5,7 +5,7 @@ var settings = {
   dots: false,
   arrow: false,
   autoplay: true,
-  autoplaySpeed: 3000,
+  autoplaySpeed: 3500,
   pauseOnFocus: false,
   infinite: true,
   slidesToShow: 1,

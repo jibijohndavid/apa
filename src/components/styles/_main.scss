@@ -1,10 +1,11 @@
 .nav {
   &-wrapper {
-    position: fixed;
-    top: 0;
+    // position: fixed;
+    // top: 0;
     width: 100%;
     padding: 10px 0;
-    background-color: rgba(0, 0, 0, 0.65);
+    // background-color: rgba(0, 0, 0, 0.65);
+    background-color: $primary-dark;
     z-index: 9;
 
     nav {
@@ -70,7 +71,7 @@
 
 .hero {
   &-wrapper {
-    height: 88vh;
+    height: 70vh;
     background-repeat: none;
     background-position: bottom center;
     background-size: cover;
