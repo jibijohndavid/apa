@@ -101,16 +101,27 @@
 
   &__title {
     padding: 0.5em 1em;
-    font-size: 42px;
     color: #fff;
-    width: 60%;
-    border-radius: 10px;
-    background-color: rgba(0, 0, 0, 0.5);
+    width: 65%;
+    border-radius: 6px;
+    background-color: rgba(34, 37, 44, 0.75);
+
+    h1 {
+      font-size: 40px;
+      line-height: 40px;
+    }
+
+    p {
+      opacity: 0.8;
+    }
 
     @media (max-width: $screen-size-sm) {
-      font-size: 36px;
       width: 100%;
       border-radius: 10px;
+
+      h1 {
+        font-size: 32px;
+      }
     }
   }
 }
