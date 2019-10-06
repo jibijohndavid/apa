@@ -80,7 +80,8 @@
     padding-bottom: 12vh;
 
     @media (max-width: $screen-size-sm) {
-      height: 550px;
+      // height: 550px;
+      height: calc(100vh - 65px);
     }
 
     &.slide {
@@ -433,7 +434,7 @@
     }
 
     @media (max-width: $screen-size-sm) {
-      width: 100%;
+      width: 90%;
     }
   }
 
