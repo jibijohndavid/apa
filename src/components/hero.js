@@ -3,7 +3,7 @@ import Slider from "react-slick"
 
 var settings = {
   dots: false,
-  arrow: false,
+  arrows: false,
   // autoplay: true,
   autoplaySpeed: 3500,
   pauseOnFocus: false,
