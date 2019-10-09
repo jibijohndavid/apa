@@ -1,5 +1,24 @@
-// .all-products {
-//   &-wrapper {
-//     // padding-top: 65px;
-//   }
-// }
+.product-filter-btns {
+  padding: 3em 0 0;
+  button {
+    background-color: transparent;
+    outline: none;
+    border: 1px solid $secondary-color;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    color: $secondary-color;
+    border-radius: 3px;
+    text-transform: uppercase;
+    padding: 4px 16px;
+    transition: all 0.3s;
+
+    &:hover {
+      background-color: $secondary-light;
+    }
+
+    &.selected {
+      background-color: $secondary-color;
+      color: $secondary-light;
+    }
+  }
+}
