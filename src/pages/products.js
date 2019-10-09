@@ -19,15 +19,25 @@ class AllProducts extends React.Component {
     this.clearProductFilter = this.clearProductFilter.bind(this)
   }
 
-  filterProducts(category) {
+  filterProducts(category, e) {
     this.setState({
       products: ProductListData.filter(item => item.category === category),
     })
+    this.clearFilterButtonSelection()
+    e.target.classList.add("selected")
   }
 
-  clearProductFilter() {
+  clearProductFilter(e) {
     this.setState({
       products: ProductListData,
+    })
+    this.clearFilterButtonSelection()
+    e.target.classList.add("selected")
+  }
+
+  clearFilterButtonSelection() {
+    document.querySelectorAll(".product-filter-btns > .btn").forEach(e => {
+      e.classList.remove("selected")
     })
   }
 
@@ -40,13 +50,14 @@ class AllProducts extends React.Component {
             <div className="product-filter-btns">
               <button
                 type="button"
-                class="selected"
+                className="btn selected"
                 onClick={this.clearProductFilter}
               >
                 All
               </button>
               {CategoryListData.map(category => (
                 <button
+                  className="btn"
                   key={category.id}
                   type="button"
                   onClick={this.filterProducts.bind(null, category.title)}

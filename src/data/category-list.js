@@ -22,10 +22,10 @@ const categoryList = [
   },
   {
     id: 4,
-    title: "Travetine",
+    title: "Travertine",
     description:
       "Travertine is a form of limestone deposited by mineral springs, especially hot springs. Travertine often has a fibrous or concentric appearance and exists in white, tan, cream-colored, and even rusty varieties.",
-    img: "Travetine.jpg",
+    img: "Travertine.jpg",
   },
   {
     id: 5,
