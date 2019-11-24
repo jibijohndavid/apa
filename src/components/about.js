@@ -1,4 +1,6 @@
-import React, { Component } from "react"
+import React from "react"
+import { Link } from "gatsby"
+
 const About = () => (
   <div className="container" id="aboutSection">
     <section className="about-wrapper">
@@ -22,21 +24,22 @@ const About = () => (
         <h2 className="about-info__title">
           Succesfull business for interior & architecture
         </h2>
-        <p>
-          Lorem ipsum dolor amet dIY sustainable man braid chartreuse. Four
-          dollar toast slow-carb cold-pressed echo park. Bespoke actually
-          unicorn pabst, twee tumblr scenester. Bespoke cred venmo blue bottle.
-          Synth kinfolk shabby chic echo park gochujang tumeric brooklyn la
-          croix squid butcher mustache. Truffaut stumptown tote bag pok pok
-          typewriter chambray normcore hot chicken tumeric.
+        <p>We provide a wide range high quality granite, marbles, travertine,
+            sandstones for residential and commercial purpose. We are
+            passionate about what we do, and we love working together to make
+            it happen. We look forward to helping you with kitchen, bathroom,
+            or business remodelling projects. We care for our customers and our
+            customers are our ultimate powerhouse and we make it possible by
+            providing them with the best price on top quality product.
+            We have a wide variety of colour to choices in differ in pattern in
+            marbles, granites, travertine, sandstone.
         </p>
         <h2 className="about-info__title-sec">
-          Architecture is not merely national but Inclearly has local ties in
-          that it is root
+        There are 360 degrees, so why stick to one?
         </h2>
-        <button type="button" className="about-info__btn text-uppercase">
-          View Products
-        </button>
+        <Link to="/products" className="about-info__btn text-uppercase">
+            View Our Products
+        </Link>
       </div>
     </section>
   </div>

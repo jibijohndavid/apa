@@ -7,25 +7,26 @@
 
 import React from "react"
 import PropTypes from "prop-types"
-import { useStaticQuery, graphql } from "gatsby"
+// import { useStaticQuery, graphql } from "gatsby"
 import { Helmet } from "react-helmet"
 
 import HeaderNav from "./common/nav"
 import Footer from "./common/footer"
 import Copyright from "./common/copyright"
+import '../../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import "./reboot.css"
 import "./styles/base.scss"
 
 const Layout = ({ children }) => {
-  const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `)
+  // const data = useStaticQuery(graphql`
+  //   query SiteTitleQuery {
+  //     site {
+  //       siteMetadata {
+  //         title
+  //       }
+  //     }
+  //   }
+  // `)
 
   return (
     <>
@@ -40,7 +41,7 @@ const Layout = ({ children }) => {
           rel="stylesheet"
           type="text/css"
           href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"
-        />
+        />  
       </Helmet>
       <HeaderNav></HeaderNav>
       <main>{children}</main>

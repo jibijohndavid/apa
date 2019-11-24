@@ -1,12 +1,13 @@
-import React, { Component } from "react"
+import React from "react"
 import Slider from "react-slick"
 
 var settings = {
   dots: false,
   arrows: false,
-  // autoplay: true,
-  autoplaySpeed: 3500,
+  autoplay: true,
+  autoplaySpeed: 4500,
   pauseOnFocus: false,
+  pauseOnHover: false,
   infinite: true,
   slidesToShow: 1,
 }
@@ -20,9 +21,10 @@ const Hero = () => (
             <div className="hero__title">
               <h1>A design culture that transforms experience</h1>
               <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Possimus quam fugit quae quia tempora officia, blanditiis,
-                sapiente veritatis dolorem autem eaque dolores animi.
+                We provide a wide range high quality granite, marbles,
+                travertine, sandstones for residential and commercial purpose.
+                We are passionate about what we do, and we love working together
+                to make it happen.
               </p>
             </div>
           </div>
@@ -32,11 +34,12 @@ const Hero = () => (
         <section className="hero-wrapper slide2">
           <div className="container">
             <div className="hero__title">
-              <h1>A design culture that transforms experience</h1>
+              <h1>There are 360 degrees, so why stick to one?</h1>
               <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Possimus quam fugit quae quia tempora officia, blanditiis,
-                sapiente veritatis dolorem autem eaque dolores animi.
+                We provide a wide range high quality granite, marbles,
+                travertine, sandstones for residential and commercial purpose.
+                We are passionate about what we do, and we love working together
+                to make it happen.
               </p>
             </div>
           </div>
@@ -46,11 +49,12 @@ const Hero = () => (
         <section className="hero-wrapper slide3">
           <div className="container">
             <div className="hero__title">
-              <h1>A design culture that transforms experience</h1>
+              <h1>Simplicity is the ultimate sophistication.</h1>
               <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Possimus quam fugit quae quia tempora officia, blanditiis,
-                sapiente veritatis dolorem autem eaque dolores animi.
+                We provide a wide range high quality granite, marbles,
+                travertine, sandstones for residential and commercial purpose.
+                We are passionate about what we do, and we love working together
+                to make it happen.
               </p>
             </div>
           </div>
@@ -60,11 +64,12 @@ const Hero = () => (
         <section className="hero-wrapper slide4">
           <div className="container">
             <div className="hero__title">
-              <h1>A design culture that transforms experience</h1>
+              <h1>Recognizing the need is the primary condition for design.</h1>
               <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Possimus quam fugit quae quia tempora officia, blanditiis,
-                sapiente veritatis dolorem autem eaque dolores animi.
+                We provide a wide range high quality granite, marbles,
+                travertine, sandstones for residential and commercial purpose.
+                We are passionate about what we do, and we love working together
+                to make it happen.
               </p>
             </div>
           </div>

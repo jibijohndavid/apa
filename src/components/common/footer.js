@@ -1,19 +1,20 @@
 import React from "react"
+import { Link } from "gatsby"
 
 const Footer = () => (
   <footer className="footer-wrapper">
     <div className="container">
       <div className="footer">
         <div className="footer__company-info">
-          <h2 className="text-primary">Apastones.</h2>
+          <h2 className="text-primary app-name">Apastones.</h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. A voluptas
-            unde at quidem, alias reprehenderit quo accusamus sit doloribus,
-            corrupti quibusdam.
+            We provide a wide range high quality granite, marbles, travertine,
+            sandstones for residential and commercial purpose. We are passionate
+            about what we do, and we love working together to make it happen.
           </p>
           <h5 className="m-0">
-            <a href="#" className="text-primary">
-              666 888 0000
+            <a href="tel:61406782219" className="text-primary">
+              +61 040 378 2219
             </a>
           </h5>
         </div>
@@ -21,32 +22,35 @@ const Footer = () => (
           <h5 className="text-uppercase">About</h5>
           <ul>
             <li>
-              <a href="#">Home</a>
+              <Link to="/">Home</Link>
             </li>
             <li>
-              <a href="#">What We Do</a>
+              <Link to="/#aboutSection">What We Do</Link>
             </li>
             <li>
-              <a href="#">Categories</a>
+              <Link to="/#categorySection">Categories</Link>
             </li>
             <li>
-              <a href="#">Products</a>
+              <Link to="/products">Products</Link>
             </li>
             <li>
-              <a href="#">Brands</a>
+              <Link to="/#brandSection">Brands</Link>
             </li>
-            <li>
-              <a href="#">Contact Us</a>
-            </li>
+            {/* <li>
+              <Link to="/">Contact Us</Link>
+            </li> */}
           </ul>
         </div>
         <div className="footer__contact">
           <h5 className="text-uppercase">Contact</h5>
           <p className="text-primary text-uppercase m-0">address</p>
-          <p className="">660 Brooklyn Street, 88 New York</p>
+          <p className="">
+            No: 4 Monarch Close, Carindale,<br></br>4152, Brisbane, QLD,
+            Australia
+          </p>
 
           <p className="text-primary text-uppercase m-0">email</p>
-          <p className="">needhelp@jibi.com</p>
+          <p className="">info@apastones.com</p>
         </div>
       </div>
     </div>

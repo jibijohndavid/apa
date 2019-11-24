@@ -1,4 +1,5 @@
-import React, { Component } from "react"
+import React from "react"
+import { Link } from "gatsby"
 
 const CallToAction = () => (
   <section className="cta-wrapper">
@@ -6,9 +7,9 @@ const CallToAction = () => (
     <h2 className="text-light cta__title">
       Home now and save your Ideas for later
     </h2>
-    <button type="button" className="cta__action">
+    <Link to="/products" className="cta__action">
       View All Products
-    </button>
+    </Link>
   </section>
 )
 

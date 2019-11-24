@@ -1,4 +1,4 @@
-import React, { Component } from "react"
+import React from "react"
 import CategoryItem from "./category-item"
 import Slider from "react-slick"
 
@@ -7,11 +7,11 @@ import CategoryList from "../data/category-list"
 var settings = {
   dots: true,
   arrows: false,
-  infinite: false,
-  speed: 500,
+  infinite: true,
+  autoplay: true,
+  speed: 650,
   slidesToShow: 3,
   slidesToScroll: 1,
-  autoplay: false,
   responsive: [
     {
       breakpoint: 576,
