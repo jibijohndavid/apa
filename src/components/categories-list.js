@@ -28,7 +28,7 @@ const imgPath = "./images/Categories/"
 const Categories = () => (
   <section className="categories-wrapper" id="categorySection">
     <h5 className="text-primary text-uppercase">Our Categories</h5>
-    <h2 className="text-light">Industires Served</h2>
+    <h2 className="text-light">Industries Served</h2>
 
     <div className="container">
       <div className="categories">

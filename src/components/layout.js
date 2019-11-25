@@ -13,9 +13,14 @@ import { Helmet } from "react-helmet"
 import HeaderNav from "./common/nav"
 import Footer from "./common/footer"
 import Copyright from "./common/copyright"
-import '../../node_modules/bootstrap/dist/css/bootstrap.min.css';
+import "../../node_modules/bootstrap/dist/css/bootstrap.min.css"
 import "./reboot.css"
 import "./styles/base.scss"
+
+if (typeof window !== "undefined") {
+  // eslint-disable-next-line global-require
+  require("smooth-scroll")('a[href*="#"]')
+}
 
 const Layout = ({ children }) => {
   // const data = useStaticQuery(graphql`
@@ -41,7 +46,7 @@ const Layout = ({ children }) => {
           rel="stylesheet"
           type="text/css"
           href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"
-        />  
+        />
       </Helmet>
       <HeaderNav></HeaderNav>
       <main>{children}</main>

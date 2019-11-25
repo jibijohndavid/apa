@@ -75,12 +75,6 @@ let productList = [
     img: "lavendar-blue.jpg",
   },
   {
-    id: "1016",
-    title: "Brazilian Morning Grey",
-    category: "Granites",
-    img: "no-image.jpg",
-  },
-  {
     id: "1017",
     title: "Labrador Antique",
     category: "Granites",
@@ -191,40 +185,35 @@ let productList = [
   {
     id: "1035",
     title: "Roller Blinds",
-    category: "Blinders",
+    category: "Blinds",
     img: "roller-blinds.jpg",
   },
   {
     id: "1036",
     title: "Zebra Roller Blinds",
-    category: "Blinders",
+    category: "Blinds",
     img: "zebra-roller.jpg",
   },
   {
     id: "1037",
     title: "Silhouette Blinds",
-    category: "Blinders",
+    category: "Blinds",
     img: "silhouette-blinds.jpg",
   },
-  {
-    id: "1038",
-    title: "Wooden Blinds",
-    category: "Blinders",
-    img: "wooden.jpg",
-  },
+  { id: "1038", title: "Wooden Blinds", category: "Blinds", img: "wooden.jpg" },
   {
     id: "1039",
     title: "Bamboo Blinds",
-    category: "Blinders",
+    category: "Blinds",
     img: "bamboo-blinds.jpg",
   },
   {
     id: "1040",
     title: "Vertical Blinds",
-    category: "Blinders",
+    category: "Blinds",
     img: "vertical-blinds.jpg",
   },
-  { id: "1041", title: "Luminix", category: "Blinders", img: "no-image.jpg" },
+  { id: "1041", title: "Luminix", category: "Blinds", img: "no-image.jpg" },
 ]
 
 export default productList

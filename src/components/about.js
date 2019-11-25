@@ -22,23 +22,22 @@ const About = () => (
           Welcome to apastones
         </h4>
         <h2 className="about-info__title">
-          Succesfull business for interior & architecture
+          Successfull business for interior & architecture
         </h2>
-        <p>We provide a wide range high quality granite, marbles, travertine,
-            sandstones for residential and commercial purpose. We are
-            passionate about what we do, and we love working together to make
-            it happen. We look forward to helping you with kitchen, bathroom,
-            or business remodelling projects. We care for our customers and our
-            customers are our ultimate powerhouse and we make it possible by
-            providing them with the best price on top quality product.
-            We have a wide variety of colour to choices in differ in pattern in
-            marbles, granites, travertine, sandstone.
+        <p>
+          We provide a wide range of high-quality granite, marbles, travertine,
+          sandstones for residential and commercial purposes. By working
+          together with big brands, small dreams become a reality and dull or
+          bland areas in your residential or commercial property become teeming
+          with beauty. There are also a large variety of colours to choose from
+          in our range of marbles, granite, travertine and sandstones. We are
+          openly available to come forward and help you with your kitchen,
+          bathroom, or business remodelling projects and feel free to contact
+          our e-mail. Our customers are our ultimate powerhouse, that’s why we
+          provide the best quality stones at the most competitive price.
         </p>
-        <h2 className="about-info__title-sec">
-        There are 360 degrees, so why stick to one?
-        </h2>
         <Link to="/products" className="about-info__btn text-uppercase">
-            View Our Products
+          View Our Products
         </Link>
       </div>
     </section>

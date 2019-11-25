@@ -50,7 +50,7 @@ const Footer = () => (
           </p>
 
           <p className="text-primary text-uppercase m-0">email</p>
-          <p className="">info@apastones.com</p>
+          <p className="">contact@apastones.com</p>
         </div>
       </div>
     </div>

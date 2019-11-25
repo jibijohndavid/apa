@@ -285,7 +285,7 @@
     }
 
     &__desc {
-      height: 145px;
+      height: 125px;
       overflow: hidden;
     }
 
@@ -477,10 +477,18 @@
   justify-content: space-between;
   color: $secondary-light;
 
+  @media (max-width: $screen-size-sm) {
+    flex-wrap: wrap;
+  }
+
   &-wrapper {
     background-color: $primary-dark;
     padding: 4em 0;
     // height: 250px;
+
+    @media (max-width: $screen-size-sm) {
+      padding: 4em 0 2em;
+    }
   }
 
   p {
@@ -489,6 +497,11 @@
 
   &__company-info {
     flex-basis: 45%;
+
+    @media (max-width: $screen-size-sm) {
+      flex-basis: 100%;
+      padding: 0 1.5em 2em;
+    }
 
     .app-name {
       font-style: italic;
@@ -523,7 +536,7 @@
 
   &__contact {
     @media (max-width: $screen-size-sm) {
-      padding-left: 2em;
+      padding-left: 1.5em;
       padding-top: 1em;
     }
     h5 {

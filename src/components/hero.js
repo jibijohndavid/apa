@@ -21,10 +21,10 @@ const Hero = () => (
             <div className="hero__title">
               <h1>A design culture that transforms experience</h1>
               <p>
-                We provide a wide range high quality granite, marbles,
-                travertine, sandstones for residential and commercial purpose.
-                We are passionate about what we do, and we love working together
-                to make it happen.
+                We provide a wide range of high-quality granite, marbles,
+                travertine, sandstones for residential and commercial purposes.
+                There are also a large variety of colours to choose from in our
+                range.
               </p>
             </div>
           </div>
@@ -36,10 +36,10 @@ const Hero = () => (
             <div className="hero__title">
               <h1>There are 360 degrees, so why stick to one?</h1>
               <p>
-                We provide a wide range high quality granite, marbles,
-                travertine, sandstones for residential and commercial purpose.
-                We are passionate about what we do, and we love working together
-                to make it happen.
+                We provide a wide range of high-quality granite, marbles,
+                travertine, sandstones for residential and commercial purposes.
+                There are also a large variety of colours to choose from in our
+                range.
               </p>
             </div>
           </div>
@@ -51,10 +51,10 @@ const Hero = () => (
             <div className="hero__title">
               <h1>Simplicity is the ultimate sophistication.</h1>
               <p>
-                We provide a wide range high quality granite, marbles,
-                travertine, sandstones for residential and commercial purpose.
-                We are passionate about what we do, and we love working together
-                to make it happen.
+                We provide a wide range of high-quality granite, marbles,
+                travertine, sandstones for residential and commercial purposes.
+                There are also a large variety of colours to choose from in our
+                range.
               </p>
             </div>
           </div>
@@ -66,10 +66,10 @@ const Hero = () => (
             <div className="hero__title">
               <h1>Recognizing the need is the primary condition for design.</h1>
               <p>
-                We provide a wide range high quality granite, marbles,
-                travertine, sandstones for residential and commercial purpose.
-                We are passionate about what we do, and we love working together
-                to make it happen.
+                We provide a wide range of high-quality granite, marbles,
+                travertine, sandstones for residential and commercial purposes.
+                There are also a large variety of colours to choose from in our
+                range.
               </p>
             </div>
           </div>

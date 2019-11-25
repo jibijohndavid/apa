@@ -5,10 +5,8 @@ import ButtonToolbar from "react-bootstrap/ButtonToolbar"
 import Form from "react-bootstrap/Form"
 
 class ContactModal extends React.Component {
-  constructor(props, context) {
-    super(props, context)
-    this.handleShow = this.handleShow.bind(this)
-    this.handleClose = this.handleClose.bind(this)
+  constructor(props) {
+    super(props)
     this.state = {
       show: false,
     }
@@ -24,6 +22,7 @@ class ContactModal extends React.Component {
         centered
         size="lg"
         show={this.state.show}
+        container={this.props.container}
       >
         <Modal.Body>
           <div className="contact-modal__info">
