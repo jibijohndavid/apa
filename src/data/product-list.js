@@ -214,6 +214,12 @@ let productList = [
     img: "vertical-blinds.jpg",
   },
   { id: "1041", title: "Luminix", category: "Blinds", img: "no-image.jpg" },
+  {
+    id: "1042",
+    title: "Calacutta White",
+    category: "Marbles",
+    img: "calacutta-white.jpg",
+  },
 ]
 
 export default productList
