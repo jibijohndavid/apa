@@ -18,14 +18,17 @@ class HeaderNav extends React.Component {
 
   handleShow = () => this.setState({ show: true })
   handleClose = () => this.setState({ show: false })
-  handleSubmit = e => {
-    // var formData = new FormData(e.target)
-    // console.log(formData)
-    // fetch("apa-contact-mail.php", {
-    //   method: "POST",
-    //   body: JSON.stringify(this.state),
-    // })
-
+  handleSubmit = event => {
+    event.preventDefault()
+    fetch("apa-contact-mail.php", {
+      method: "POST",
+      body: JSON.stringify(this.state),
+    })
+    this.setState({
+      name: "",
+      email: "",
+      message: "",
+    })
     this.handleClose()
   }
 
@@ -34,7 +37,7 @@ class HeaderNav extends React.Component {
       <div className="nav-wrapper">
         <div className="container">
           <nav>
-            <span className="nav__branding">Apastones.</span>
+            <span className="nav__branding">APAstones.</span>
             <ul className="nav__links m-0">
               <li className="active">
                 <Link to="/">Home</Link>
@@ -118,6 +121,7 @@ class HeaderNav extends React.Component {
                     placeholder="Your name"
                     name="name"
                     required
+                    value={this.state.name}
                     onChange={e => this.setState({ name: e.target.value })}
                   />
                 </Form.Group>
@@ -127,6 +131,7 @@ class HeaderNav extends React.Component {
                     placeholder="Your email"
                     required
                     name="email"
+                    value={this.state.email}
                     onChange={e => this.setState({ email: e.target.value })}
                   />
                 </Form.Group>
@@ -137,18 +142,21 @@ class HeaderNav extends React.Component {
                     placeholder="Type your message here..."
                     required
                     name="message"
+                    value={this.state.message}
                     onChange={e => this.setState({ message: e.target.value })}
                   />
                 </Form.Group>
                 <ButtonToolbar className="mt-4">
-                  <Button variant="secondary" onClick={this.handleClose}>
+                  <Button
+                    variant="secondary"
+                    onClick={e => this.handleSubmit(e)}
+                  >
                     Cancel
                   </Button>
                   <Button
                     type="button"
                     variant="primary"
                     onClick={this.handleSubmit}
-                    disabled
                   >
                     Submit
                   </Button>

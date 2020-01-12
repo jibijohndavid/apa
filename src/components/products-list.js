@@ -54,13 +54,13 @@ const ProductList = () => (
         ></ProductListItem>
         <ProductListItem
           rkey="8"
-          category="Blinders"
+          category="Blinds"
           img={path + "Blinds/zebra-roller.jpg"}
           title="Zebra Roller Blinds"
         ></ProductListItem>
         <ProductListItem
           rkey="9"
-          category="Blinders"
+          category="Blinds"
           img={path + "Blinds/wooden.jpg"}
           title="Wooden Blinds"
         ></ProductListItem>

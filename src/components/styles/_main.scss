@@ -3,7 +3,7 @@
     // position: fixed;
     // top: 0;
     width: 100%;
-    padding: 10px 0;
+    padding: 6px 0;
     // background-color: rgba(0, 0, 0, 0.65);
     background-color: $primary-dark;
     z-index: 9;
@@ -16,8 +16,8 @@
 
   &__branding {
     color: $primary-color;
-    font-size: 30px;
-    font-weight: 500;
+    font-size: 38px;
+    font-weight: 700;
     font-style: italic;
   }
 
@@ -78,13 +78,15 @@
     background-size: cover;
     display: flex;
     align-items: flex-end;
-    padding-bottom: 12vh;
+    // padding-bottom: 12vh;
+    padding: 10vh 0;
 
     @media (max-width: $screen-size-sm) {
       // height: 550px;
       height: calc(100vh - 65px);
     }
 
+    // Background Slides
     &.slide {
       &1 {
         background-image: url(../../../static/images/banner1.jpg);
@@ -97,6 +99,18 @@
       }
       &4 {
         background-image: url(../../../static/images/banner4.jpg);
+      }
+    }
+
+    // Positions
+    &.top {
+      .hero__title {
+        margin-bottom: calc(80vh - 40vh);
+      }
+    }
+    &.right {
+      .hero__title {
+        margin-left: auto;
       }
     }
   }

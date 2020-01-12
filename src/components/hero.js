@@ -4,7 +4,7 @@ import Slider from "react-slick"
 var settings = {
   dots: false,
   arrows: false,
-  autoplay: true,
+  autoplay: false,
   autoplaySpeed: 4500,
   pauseOnFocus: false,
   pauseOnHover: false,
@@ -16,7 +16,7 @@ const Hero = () => (
   <>
     <Slider {...settings}>
       <div>
-        <section className="hero-wrapper slide1">
+        <section className="hero-wrapper slide1 top right">
           <div className="container">
             <div className="hero__title">
               <h1>A design culture that transforms experience</h1>
@@ -31,7 +31,7 @@ const Hero = () => (
         </section>
       </div>
       <div>
-        <section className="hero-wrapper slide2">
+        <section className="hero-wrapper slide2 top">
           <div className="container">
             <div className="hero__title">
               <h1>There are 360 degrees, so why stick to one?</h1>
@@ -46,7 +46,7 @@ const Hero = () => (
         </section>
       </div>
       <div>
-        <section className="hero-wrapper slide3">
+        <section className="hero-wrapper slide3 top">
           <div className="container">
             <div className="hero__title">
               <h1>Simplicity is the ultimate sophistication.</h1>
