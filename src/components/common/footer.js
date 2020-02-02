@@ -43,14 +43,16 @@ const Footer = () => (
         </div>
         <div className="footer__contact">
           <h5 className="text-uppercase">Contact</h5>
-          <p className="text-primary text-uppercase m-0">address</p>
+          {/* <p className="text-primary text-uppercase m-0">address</p>
           <p className="">
             No: 4 Monarch Close, Carindale,<br></br>4152, Brisbane, QLD,
             Australia
-          </p>
+          </p> */}
 
           <p className="text-primary text-uppercase m-0">email</p>
           <p className="">contact@apastones.com</p>
+          <p className="text-primary text-uppercase m-0">phone</p>
+          <p className="">+61 040 378 2219</p>
         </div>
       </div>
     </div>

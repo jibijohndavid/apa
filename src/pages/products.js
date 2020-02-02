@@ -55,7 +55,9 @@ class AllProducts extends React.Component {
               >
                 All
               </button>
-              {CategoryListData.map(category => (
+              {CategoryListData.filter(
+                category => category.active === true
+              ).map(category => (
                 <button
                   className="btn"
                   key={category.id}
@@ -67,14 +69,16 @@ class AllProducts extends React.Component {
               ))}
             </div>
             <div className="products">
-              {this.state.products.map(product => (
-                <ProductListItem
-                  key={product.id}
-                  category={product.category}
-                  img={path + product.category + "/" + product.img}
-                  title={product.title}
-                ></ProductListItem>
-              ))}
+              {this.state.products
+                .filter(product => product.active === true)
+                .map(product => (
+                  <ProductListItem
+                    key={product.id}
+                    category={product.category}
+                    img={path + product.category + "/" + product.img}
+                    title={product.title}
+                  ></ProductListItem>
+                ))}
             </div>
           </div>
         </div>

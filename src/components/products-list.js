@@ -1,8 +1,28 @@
 import React from "react"
 import ProductListItem from "./product-item"
+import ProductListData from "../data/product-list"
 import { Link } from "gatsby"
 
-var path = "./images/"
+const path = "./images/"
+let randomProducts = []
+
+const generateRandomProducts = () => {
+  const activeProducts = ProductListData.filter(
+    product => product.active === true
+  )
+  let randumProductNumberArray = () => {
+    let randomNumberArr = []
+    while (randomNumberArr.length < 9) {
+      let r = Math.floor(Math.random() * activeProducts.length)
+      if (randomNumberArr.indexOf(r) === -1) randomNumberArr.push(r)
+    }
+    return randomNumberArr
+  }
+  for (let index of randumProductNumberArray()) {
+    randomProducts.push(activeProducts[index])
+  }
+}
+generateRandomProducts()
 
 const ProductList = () => (
   <section className="products-wrapper">
@@ -10,60 +30,14 @@ const ProductList = () => (
     <h2 className="text-primary">Products Catalogue</h2>
     <div className="container">
       <div className="products">
-        <ProductListItem
-          rkey="1"
-          category="Marbles"
-          img={path + "Marbles/bruno-white.jpg"}
-          title="Bruno White"
-        ></ProductListItem>
-        <ProductListItem
-          rkey="2"
-          category="Marbles"
-          img={path + "Marbles/ocean-black.jpg"}
-          title="Ocean Black"
-        ></ProductListItem>
-        <ProductListItem
-          rkey="3"
-          category="Granites"
-          img={path + "Granites/ivory-fantasy.jpg"}
-          title="Ivory fantasy"
-        ></ProductListItem>
-        <ProductListItem
-          rkey="4"
-          category="Granites"
-          img={path + "Granites/lavendar-blue.jpg"}
-          title="Lavender Blue"
-        ></ProductListItem>
-        <ProductListItem
-          rkey="5"
-          category="Granites"
-          img={path + "Granites/kashmir-white.jpg"}
-          title="Kashmire White"
-        ></ProductListItem>
-        <ProductListItem
-          rkey="6"
-          category="Travertine"
-          img={path + "Travertine/beige.jpg"}
-          title="Beige"
-        ></ProductListItem>
-        <ProductListItem
-          rkey="7"
-          category="Travertine"
-          img={path + "Travertine/silver.jpg"}
-          title="Silver"
-        ></ProductListItem>
-        <ProductListItem
-          rkey="8"
-          category="Blinds"
-          img={path + "Blinds/zebra-roller.jpg"}
-          title="Zebra Roller Blinds"
-        ></ProductListItem>
-        <ProductListItem
-          rkey="9"
-          category="Blinds"
-          img={path + "Blinds/wooden.jpg"}
-          title="Wooden Blinds"
-        ></ProductListItem>
+        {randomProducts.map(product => (
+          <ProductListItem
+            key={product.id}
+            category={product.category}
+            img={path + product.category + "/" + product.img}
+            title={product.title}
+          ></ProductListItem>
+        ))}
       </div>
       <Link to="/products" className="cta__action">
         View All Products

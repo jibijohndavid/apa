@@ -33,15 +33,17 @@ const Categories = () => (
     <div className="container">
       <div className="categories">
         <Slider {...settings}>
-          {CategoryList.map(category => (
-            <div key={category.id}>
-              <CategoryItem
-                title={category.title}
-                img={imgPath + category.img}
-                desc={category.description}
-              ></CategoryItem>
-            </div>
-          ))}
+          {CategoryList.filter(category => category.active === true).map(
+            category => (
+              <div key={category.id}>
+                <CategoryItem
+                  title={category.title}
+                  img={imgPath + category.img}
+                  desc={category.description}
+                ></CategoryItem>
+              </div>
+            )
+          )}
         </Slider>
       </div>
     </div>

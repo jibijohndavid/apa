@@ -25,7 +25,7 @@ const About = () => (
           Successfull business for interior & architecture
         </h2>
         <p>
-          We provide a wide range of high-quality granite, marbles, travertine,
+          {/* We provide a wide range of high-quality granite, marbles, travertine,
           sandstones for residential and commercial purposes. By working
           together with big brands, small dreams become a reality and dull or
           bland areas in your residential or commercial property become teeming
@@ -34,6 +34,15 @@ const About = () => (
           openly available to come forward and help you with your kitchen,
           bathroom, or business remodelling projects and feel free to contact
           our e-mail. Our customers are our ultimate powerhouse, that’s why we
+          provide the best quality stones at the most competitive price. */}
+          We provide a wide range of high-quality stones which include: granite,
+          marble and travertine. By working together with big brands, small
+          dreams become a reality. The dull parts of your residential or
+          commercial block can be transformed into vibrant atmospheres. There
+          are also a large variety of colours to choose from in our range of
+          stones. We are openly available to help you with your kitchen,
+          bathroom, or business remodelling projects. Feel free to contact our
+          e-mail. Our customers are our ultimate powerhouse, that’s why we
           provide the best quality stones at the most competitive price.
         </p>
         <Link to="/products" className="about-info__btn text-uppercase">
