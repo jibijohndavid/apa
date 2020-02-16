@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "gatsby"
 
 const Category = props => (
   <div className="category-item">
@@ -6,9 +7,13 @@ const Category = props => (
     <div className="category-item__info">
       <h4 className="category-item__title">{props.title}</h4>
       <p className="category-item__desc">{props.desc}</p>
-      <a href="#" className="category-item__action text-uppercase">
+      <Link
+        to="/products"
+        className="category-item__action text-uppercase"
+        state={{ browsedCategory: props.title }}
+      >
         Browse {props.title}
-      </a>
+      </Link>
     </div>
   </div>
 )

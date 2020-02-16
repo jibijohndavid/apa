@@ -5,7 +5,7 @@ var settings = {
   dots: false,
   arrows: false,
   autoplay: true,
-  autoplaySpeed: 4500,
+  autoplaySpeed: 5000,
   pauseOnFocus: false,
   pauseOnHover: false,
   infinite: true,
@@ -34,10 +34,9 @@ const Hero = () => (
           <div className="container">
             <div className="hero__title">
               <h1>A design culture that transforms experience</h1>
-              {/* <p>
-                We provide a wide range of high-quality granite, marbles and
-                travertine.
-              </p> */}
+              <p>
+                Be a collection of what you love. Make it simple but elegant.
+              </p>
             </div>
           </div>
         </section>
@@ -47,10 +46,10 @@ const Hero = () => (
           <div className="container">
             <div className="hero__title">
               <h1>Facelift your kitchen, bathroom and flooring.</h1>
-              {/* <p>
-                We provide a wide range of high-quality granite, marbles and
-                travertine.
-              </p> */}
+              <p>
+                Your home should tell the story of who you are and be a
+                collection of what you love.
+              </p>
             </div>
           </div>
         </section>
@@ -60,23 +59,7 @@ const Hero = () => (
           <div className="container">
             <div className="hero__title">
               <h1>Recognizing the need is the primary condition for design.</h1>
-              {/* <p>
-                We provide a wide range of high-quality granite, marbles and
-                travertine.
-              </p> */}
-            </div>
-          </div>
-        </section>
-      </div>
-      <div>
-        <section className="hero-wrapper slide5 top">
-          <div className="container">
-            <div className="hero__title">
-              <h1>Facelift your kitchen, bathroom and flooring.</h1>
-              {/* <p>
-                We provide a wide range of high-quality granite, marbles and
-                travertine.
-              </p> */}
+              <p>Decorating is not a look, It's a point of view.</p>
             </div>
           </div>
         </section>
